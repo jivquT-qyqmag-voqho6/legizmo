@@ -1,0 +1,15 @@
+Package: com.lunotech11.legizmo
+Name: Legizmo 'Moonstone'
+Version: 5.0.0
+Architecture: iphoneos-arm64
+Description: Pair Apple Watch (watchOS 6–11) with older jailbroken iOS (14–16).
+ Legizmo patches iOS pairing, sync, and health daemons at runtime to bypass
+ Apple's version compatibility enforcement. Includes compatibility fixes for
+ Blood Oxygen, ECG, screenshots, icon layout, and more.
+Maintainer: lunotech11 <contact@legizmo.app>
+Author: lunotech11
+Section: Tweaks
+Depends: mobilesubstrate (>= 0.9.7000), preferenceloader, firmware (>= 14.0)
+Conflicts: com.lunotech11.legizmo-lighthouse, com.lunotech11.legizmo-kincaid, com.lunotech11.legizmo-jupiter, com.lunotech11.legizmo-grace
+Replaces: com.lunotech11.legizmo-lighthouse, com.lunotech11.legizmo-kincaid
+Tag: compatible_min::ios14.0

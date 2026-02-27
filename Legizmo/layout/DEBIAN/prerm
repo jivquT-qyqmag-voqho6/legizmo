@@ -1,0 +1,13 @@
+#!/bin/bash
+# prerm — runs before package removal
+
+echo "[Legizmo] Removing Legizmo..."
+
+# Remove persisted native method config if present
+rm -f /var/jb/var/mobile/Library/Preferences/com.lunotech11.legizmo.plist
+
+killall -9 mediaremoted 2>/dev/null || true
+killall -9 companionappd 2>/dev/null || true
+
+echo "[Legizmo] Removed. Respring to complete."
+exit 0

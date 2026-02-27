@@ -1,0 +1,12 @@
+#!/bin/bash
+# postinst — runs after package install
+
+echo "[Legizmo] Install complete."
+
+# Restart affected daemons
+killall -9 mediaremoted 2>/dev/null || true
+killall -9 companionappd 2>/dev/null || true
+killall -9 healthd 2>/dev/null || true
+
+echo "[Legizmo] Daemons restarted. Please respring SpringBoard to complete setup."
+exit 0

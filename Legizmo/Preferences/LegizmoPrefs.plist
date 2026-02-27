@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>items</key>
+    <array>
+
+        <!-- ── Header ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Legizmo Moonstone</string>
+            <key>footerText</key><string>Pairs Apple Watch (watchOS 6–11) with older jailbroken iOS (14–16).</string>
+        </dict>
+
+        <!-- Master toggle -->
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Enable Legizmo</string>
+            <key>key</key><string>LGZEnabled</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+            <key>PostNotification</key><string>com.lunotech11.legizmo/settingsChanged</string>
+        </dict>
+
+        <!-- ── Pairing ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Pairing Support</string>
+            <key>footerText</key><string>Tweak Method works only while jailbroken. Native Method persists across reboots.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSLinkListCell</string>
+            <key>label</key><string>Pairing Method</string>
+            <key>key</key><string>LGZPairingMethod</string>
+            <key>default</key><string>tweak</string>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+            <key>validValues</key>
+            <array>
+                <string>tweak</string>
+                <string>native</string>
+            </array>
+            <key>validTitles</key>
+            <array>
+                <string>Tweak Method</string>
+                <string>Native Method</string>
+            </array>
+        </dict>
+
+        <!-- ── Update control ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Update Control</string>
+            <key>footerText</key><string>Blocks watchOS OTA updates that are not compatible with your version of Legizmo.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Block Incompatible Updates</string>
+            <key>key</key><string>LGZBlockIncompatibleUpdates</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+        </dict>
+
+        <!-- ── Compatibility Fixes ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string>Compatibility Fixes</string>
+            <key>footerText</key><string>Enable individual feature patches for your iOS / watchOS combination.</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Blood Oxygen (SpO2)</string>
+            <key>key</key><string>LGZCompatBloodOxygen</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>ECG Support</string>
+            <key>key</key><string>LGZCompatECG</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Screenshot Support</string>
+            <key>key</key><string>LGZCompatScreenshot</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSSwitchCell</string>
+            <key>label</key><string>Icon Layout (watchOS 10+)</string>
+            <key>key</key><string>LGZCompatIconLayout</string>
+            <key>default</key><true/>
+            <key>defaults</key><string>com.lunotech11.legizmo</string>
+        </dict>
+
+        <!-- ── Apply ── -->
+        <dict>
+            <key>cell</key><string>PSGroupCell</string>
+            <key>label</key><string></string>
+        </dict>
+
+        <dict>
+            <key>cell</key><string>PSButtonCell</string>
+            <key>label</key><string>Respring to Apply</string>
+            <key>action</key><string>respring</string>
+        </dict>
+
+    </array>
+</dict>
+</plist>
